@@ -1,0 +1,76 @@
+/* 
+foi um teste para ver se estava pegando o css
+body {
+    background-color: aqua;
+} */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /*
+        colocar background-image: url(); 
+        imagem de muro
+    */
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* sem height fica sem formataçaõ */
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    /* separação do menu */
+    border-bottom: 5px solid gold;
+}
+
+.panel {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*
+        border: 1px solid red;
+    */
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    /* se passar o nome fica com um leve delay */
+    background-color: aquamarine;
+    /* mudar para #1aeaa5 */
+}
+
+.enemy {
+    background-color: red;
+    /*
+        mudar para background-image: url();
+        imagem do ralph
+    */
+    background-size: cover;
+}
+
+.menu-lives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* para separar os números 0 do time-left e your score podems criar uma classe e colocar nos h2 correspondentes  
+.second {
+    margin-top: 10px;
+}
+ou podemos usar a segunda maneira abaixo
+*/
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+    margin-top: 5px;
+}

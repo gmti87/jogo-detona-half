@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <!-- Se voce colocar div.nome+div.nome e der enter são criadas duas divs com o nome especificado. -->
+            <!-- att + seta para baixo seleciona tudo na mesma linha -->
+            <!-- alt + shift + seta para baixo clona -->
+            <div class="menu-time">
+                <!-- estilo é masi recomendado em arquivo css não na mesma linha como abaixo. -->
+                <h2 style="color: red;">Time Left</h2>
+                <h2 id="time-left">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2 style="color: red;">Your score</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="menu-lives">
+                <!-- colocar a imagem do player com alt="foto do jogador" height=80px -->
+                <img src=""/>
+                <h2>x3</h2>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-row">
+                <div class="square enemy" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- pegar as imagens e os audios e colocar nas pastas imagens e audio -->
+
+    <script defer src="./src/scripts/engine.js"></script>
+
+</body>
+</html>
